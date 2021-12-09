@@ -50,5 +50,16 @@ contract DepositSingle {
 
         IERC20 tokenALP = IERC20(tokenA);
         IERC20 tokenBLP = IERC20(tokenB);
+
+
+        tokenALP.approve(address(router01),amountLP01);
+        tokenALP.approve(address(router01),amountLP02);
+   
+        (uint256 adepo,uint256 bdepo,uint256 lpt) =router01.addLiquidity(tokenA,tokenB,amountLP01,amountLP02,amountLP01*0.99,amountLP02*0.99,msg.sender,block.timestamp + 360);
+
+       
+        
+        
+        
     }
 }
