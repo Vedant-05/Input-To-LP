@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.6;
 
 interface IUniswapV2Factory {
     // 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f
